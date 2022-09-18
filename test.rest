@@ -1,0 +1,31 @@
+GET http://localhost:8383/friends
+###
+
+GET http://localhost:8383/friends/sriya
+
+###
+
+post http://localhost:8383/addfriend
+Content-Type: application/json
+
+{
+    "name":"sriya",
+    "status":"enemy"
+}
+
+###
+PATCH http://localhost:8383/changestatus
+Content-Type: application/json
+
+{
+    "name":"sriya",
+    "newStatus":"friend"
+}
+###
+DELETE http://localhost:8383/friends
+Content-Type: application/json
+
+{
+    "name":"banana"
+}
+### 
